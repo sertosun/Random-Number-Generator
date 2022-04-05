@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9def274ed7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Random Number Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="content_top">
+          <div id="result">10</div>
+          <div class="input_container">
+            <label for="min">Min.</label>
+            <input
+              type="number"
+              name="min"
+              id="min"
+              max="9999999999"
+              min="-9999999999"
+              placeholder="1"
+            />
+
+            <label for="max">Max.</label>
+            <input
+              type="number"
+              name="max"
+              id="max"
+              max="9999999999"
+              min="-9999999999"
+              placeholder="10"
+            />
+          </div>
+        </div>
+        <div class="content_bottom">
+          <button id="send" onclick="random();">GENERIEREN</button>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
